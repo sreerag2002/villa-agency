@@ -1,0 +1,109 @@
+.card {
+  position: relative; /* Needed for the pseudo-element hover effect */
+  background: #000;
+  border-radius: 15px;
+  padding: 20px;
+  width: 30%;
+  border: 1px solid #ffffff93;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+  overflow: hidden; /* Prevents the zoomed image from overflowing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02); 
+    box-shadow: #fafafaf1 0px 5px 15px;
+    .card__image {
+      transform: scale(1.05); 
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05); /* Zoom effect for the image */
+    }
+  }
+
+  &__tag {
+    background: #eedcd18a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: raleway;
+  }
+
+  &__price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f17e56;
+    margin-bottom: 10px;
+  }
+
+  &__address {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: "Parkinsans", sans-serif;
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: "Parkinsans", sans-serif;
+
+    p {
+      margin: 0;
+      strong {
+        color: #b4afafb2;
+      }
+    }
+  }
+
+  &__button {
+    background: #f56868;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+
+    &:hover {
+      background: #f56868ab;
+    }
+  }
+}
+
+
+@include mobile {
+  .card {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .card {
+    width: 45%;
+  }
+}

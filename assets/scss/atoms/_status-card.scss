@@ -1,0 +1,60 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+.status-card {
+    position: relative;
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px #ffffffd2;
+  
+    &__content {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    &__number {
+      font-size: 36px;
+      font-weight: bold;
+      color: #f56868; 
+    }
+  
+    &__text {
+      p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #fff;
+        font-family: raleway;
+      }
+    }
+  
+    &__notification {
+        position: absolute;
+        top: -22px;
+        right: -20px;
+        width: 50px;
+        height: 50px;
+        background-color: #f64c22;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        box-shadow: 0 4px 8px #ffffff83;
+      }
+  }
+  
+  @include mobile{
+    .status-card{
+      padding: 20px 30px;
+      width: 100%;
+      margin-bottom: 45px;
+    }
+  }
+  @include tablet{
+    .status-card{
+      padding: 20px 30px;
+      width: 40%;
+      margin-right: 45px;
+    }
+  }

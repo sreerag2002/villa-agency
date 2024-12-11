@@ -1,0 +1,31 @@
+.va-properties{
+    padding-top: 60px;
+    background-color: #000;
+    &__head{
+        text-align: center;
+        padding-bottom: 40px;
+       p{
+        color: #f56868;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        padding-bottom: 20px;
+       }
+       h6{
+          color: #fff;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 700;
+          font-size: 32px;
+       }
+    }
+    &__wrap{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+   
+}

@@ -1,0 +1,46 @@
+.va-contact{
+    background-color: #000;
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+       
+    }
+    .va-contactimg{
+       
+       
+    }
+    .va-contact__wrap{
+        top: 300px;
+        transform: translateY(-25%);
+    }
+}
+
+@include mobile-tablet{
+    .va-contact{
+        &__wrap{
+            flex-direction: column;
+            
+        }
+        .va-contact__wrap{
+            top: 180px;
+            position: relative;
+        }
+        .va-contactimg__contact {
+            padding-bottom: 15px;
+        }
+    }
+}
+@include tablet-pro{
+    .va-contact{
+        &__wrap{
+            flex-direction: row;
+            
+        }
+        .va-contact__wrap{
+            top: 300px;
+            position: relative;
+        }
+    }
+}
+

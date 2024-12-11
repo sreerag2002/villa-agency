@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- styles -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- body content start -->
+    <nav class="va-navbar navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar__logo" href="#">VILLA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" onclick="setActive(this)">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#properties" onclick="setActive(this)">PROPERTIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#property" onclick="setActive(this)">PROPERTY DETAILS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus" onclick="setActive(this)">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="book_width">
+            <div class="navbar__book ms-3">
+              <div class="icon">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <span>Schedule a visit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <div class="va-header">
+      <div class="hero-banner__wrap">
+          <div class="hero-banner">
+              <img class="hero-banner__image" src="../assets/images/banner-01.jpg" alt="Luxury Villa" />
+        
+              <div class="hero-banner__content">
+                <div class="hero-banner__location">
+                  <span>Goa, <span class="highlight">India</span></span>
+                </div>
+                <h1>HURRY! <br />GET THE <br />BEST VILLA <br />FOR YOU</h1>
+              </div>
+            </div>
+            <div class="hero-banner">
+                <img class="hero-banner__image" src="../assets/images/banner-03.jpg" alt="Luxury Villa" />
+          
+                <div class="hero-banner__content">
+                  <div class="hero-banner__location">
+                    <span>Kerala, <span class="highlight">India</span></span>
+                  </div>
+                  <h1>BE QUICK! <br />GET THE <br />BEST VILLA <br />IN TOWN</h1>
+                  
+                </div>
+              </div>
+              <div class="hero-banner">
+                <img class="hero-banner__image" src="../assets/images/banner-02.jpg" alt="Luxury Villa" />
+          
+                <div class="hero-banner__content">
+                  <div class="hero-banner__location">
+                    <span>Jaipur, <span class="highlight">India</span></span>
+                  </div>
+                  <h1> ACT NOW! <br />GET THE <br />HIGHEST LEVEL <br />PENTHOUSE</h1>
+                </div>
+              </div>
+      </div>
+      <button class="hero-banner__arrow left">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero-banner__arrow right">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+  </div>
+  <!-- 1 -->
+  <div class="va-featured">
+    <div class="content-wrapper">
+        <div class="va-featured__wrap">
+            <div class="va-featured__propertyimg">
+                <img src="../assets/images/featured.jpg" alt="Living Room" />
+              </div>
+              <div class="va-featured__icon">
+                <img src="../assets/images/featured-icon.png" alt="Edit Property Icon" />
+              </div>
+              <div class="va-featured__content">
+                <p>| FEATURED</p>
+                <h6>Best Appartment <br>& Sea view</h6>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Best useful links ?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          Reserve your luxury room or suite effortlessly with our simple and secure online booking system. <strong>Explore availability, rates, and exclusive offers</strong> for your desired dates.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          How does this work ?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          browse our luxury options, check availability, and confirm your reservation securely online. Instantly receive your booking confirmation and let us handle the rest for a seamless experience.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Why is Villa Agency the ?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                         <strong>Villa Agency</strong>  stands out for offering handpicked luxury villas with personalized services, ensuring an unforgettable stay. Our expertise, 24/7 support, and exclusive packages make us the trusted choice for premium vacation rentals.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="va-featured__box">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <img src="../assets/images/info-icon-01.png" alt="Flat Space Icon" />
+                  </div>
+                  <div class="info-content">
+                    <h3>250 m<sup>2</sup></h3>
+                    <p>Total Flat Space</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="info-item">
+                  <div class="info-icon">
+                    <img src="../assets/images/info-icon-02.png" alt="Contract Icon" />
+                  </div>
+                  <div class="info-content">
+                    <h3>Contract</h3>
+                    <p>Contract Ready</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="info-item">
+                  <div class="info-icon">
+                    <img src="../assets/images/info-icon-03.png" alt="Payment Icon" />
+                  </div>
+                  <div class="info-content">
+                    <h3>Payment</h3>
+                    <p>Payment Process</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="info-item">
+                  <div class="info-icon">
+                    <img src="../assets/images/info-icon-04.png" alt="Safety Icon" />
+                  </div>
+                  <div class="info-content">
+                    <h3>Safety</h3>
+                    <p>24/7 Under Control</p>
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+  </div>
+  <!-- videobox -->
+  <div class="va-videobox">
+    <!-- img -->
+        <div class="va-videoimg">
+            <div class="banner-main">
+                <img class="banner-main__image" src="../assets/images/video-bg.jpg" alt="Luxury Villa" />
+            <div class="va-contactimg__content">
+                <div class="va-contactimg__contact">
+                    <span>| <span class="highlight">VIDEO VIEW</span></span>
+                </div>
+                <h1>Get Closer View<br />& Different <br>Feeling</h1>
+            </div>
+            </div>
+         </div>
+   <!-- videobox -->
+    <div class="content-wrapper">
+      <div class="va-videobox__wrap">
+        <div class="va-video-box">
+          <img src="../assets/images/video-frame.jpg"
+            alt="Video Thumbnail"/>
+          <div class="va-video-box__overlay">
+            <div class="va-video-box__play">
+              <i class="play-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- statuscard -->
+      <div class="status-card__wrap">
+        <div class="status-card">
+          <div class="status-card__content">
+            <span class="status-card__number">34</span>
+            <div class="status-card__text">
+              <p>Buildings</p>
+              <p>Finished Now</p>
+            </div>
+          </div>
+          <div class="status-card__notification"></div>
+        </div>
+        <div class="status-card">
+          <div class="status-card__content">
+            <span class="status-card__number">12</span>
+            <div class="status-card__text">
+              <p>Years</p>
+              <p>Experience</p>
+            </div>
+          </div>
+          <div class="status-card__notification"></div>
+        </div>
+        <div class="status-card">
+          <div class="status-card__content">
+            <span class="status-card__number">24</span>
+            <div class="status-card__text">
+              <p>Awards</p>
+              <p>Won 2024</p>
+            </div>
+          </div>
+          <div class="status-card__notification"></div>
+        </div>
+      </div>
+    </div>
+
+   
+
+  </div>
+<!-- best deals -->
+<div class="va-bstdeal" id="properties">
+  <div class="content-wrapper">
+      <div class="va-bstdeal__wrap">
+          <div class="va-bstdeal__head">
+              <p>| BEST DEALS</p>
+              <h6>Find Your Best Deal <br>Right Now!</h6>
+          </div>
+      </div>
+      <div class="va-bstdeal__details">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Apartment</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Villa House</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Penthouse</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="va-apartment">
+                  <div class="va-apartment__box">
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Total Flat Space</span>
+                      <span class="va-apartment__value">185 m²</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Floor number</span>
+                      <span class="va-apartment__value">26th</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Number of rooms</span>
+                      <span class="va-apartment__value">4</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Parking Available</span>
+                      <span class="va-apartment__value">Yes</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Payment Process</span>
+                      <span class="va-apartment__value">Bank</span>
+                    </div>
+                  </div>
+                  <div class="va-apartment__img">
+                    <img src="../assets/images/deal-01.jpg" alt="">
+                  </div>
+                  <div class="va-apartment__extrainfo">
+                    <h6>Extra Info About Property</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p>
+                    <p>When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+                    <div class="va-button">
+                      <div class="va-button__icon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <span class="va-button__text">Schedule a visit</span>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="va-apartment">
+                  <div class="va-apartment__box">
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Total Flat Space</span>
+                      <span class="va-apartment__value">250 m²</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Floor number</span>
+                      <span class="va-apartment__value">26th</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Number of rooms</span>
+                      <span class="va-apartment__value">5</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Parking Available</span>
+                      <span class="va-apartment__value">Yes</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Payment Process</span>
+                      <span class="va-apartment__value">Bank</span>
+                    </div>
+                  </div>
+                  <div class="va-apartment__img">
+                    <img src="../assets/images/deal-02.jpg" alt="">
+                  </div>
+                  <div class="va-apartment__extrainfo">
+                    <h6>Extra Info About Villa</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p>
+                    <p>When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+                    <div class="va-button">
+                      <div class="va-button__icon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <span class="va-button__text">Schedule a visit</span>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="va-apartment">
+                  <div class="va-apartment__box">
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Total Flat Space</span>
+                      <span class="va-apartment__value">320 m²</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Floor number</span>
+                      <span class="va-apartment__value">34th</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Number of rooms</span>
+                      <span class="va-apartment__value">6</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Parking Available</span>
+                      <span class="va-apartment__value">Yes</span>
+                    </div>
+                    <div class="va-apartment__item">
+                      <span class="va-apartment__label">Payment Process</span>
+                      <span class="va-apartment__value">Bank</span>
+                    </div>
+                  </div>
+                  <div class="va-apartment__img">
+                    <img src="../assets/images/deal-03.jpg" alt="">
+                  </div>
+                  <div class="va-apartment__extrainfo">
+                    <h6>Extra Info About Penthouse</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p>
+                    <p>When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+                    <div class="va-button">
+                      <div class="va-button__icon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <span class="va-button__text">Schedule a visit</span>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+  <!-- properties -->
+  <div class="va-properties" id="property">
+    <div class="content-wrapper">
+        <div class="va-properties__head">
+            <p>| FEATURED</p>
+                <h6>We Provide The Best <br>Property You Like</h6>
+        </div>
+        <div class="va-properties__wrap">
+          <div class="card">
+            <img src="../assets/images/property-01.jpg" alt="Luxury Villa" class="card__image" />
+            <span class="card__tag">Luxury Villa</span>
+            <span class="card__price">$2.264.000</span>
+            <h3 class="card__address">Assagao, North Goa, 403507</h3>
+            <div class="card__details">
+              <p>Bedrooms: <strong>8</strong></p>
+              <p>Bathrooms: <strong>8</strong></p>
+              <p>Area: <strong>545m²</strong></p>
+              <p>Floor: <strong>3</strong></p>
+              <p>Parking: <strong>6 spots</strong></p>
+            </div>
+            <hr>
+            <button class="card__button">Schedule a visit</button>
+          </div>
+          <div class="card">
+            <img src="../assets/images/property-03.jpg" alt="Luxury Villa" class="card__image" />
+            <span class="card__tag">Luxury Villa</span>
+            <span class="card__price">$1.180.000</span>
+            <h3 class="card__address">25 Ocean Drive, Candolim, 403515</h3>
+            <div class="card__details">
+              <p>Bedrooms: <strong>6</strong></p>
+              <p>Bathrooms: <strong>5</strong></p>
+              <p>Area: <strong>450m2</strong></p>
+              <p>Floor: <strong>3</strong></p>
+              <p>Parking: <strong>8 spots</strong></p>
+            </div>
+            <hr>
+            <button class="card__button">Schedule a visit</button>
+          </div>
+          <div class="card">
+            <img src="../assets/images/property-02.jpg" alt="Luxury Villa" class="card__image" />
+            <span class="card__tag">Luxury Villa</span>
+            <span class="card__price">$1.460.000</span>
+            <h3 class="card__address">12 Palm Grove Lane, Anjuna, Goa 403509</h3>
+            <div class="card__details">
+              <p>Bedrooms: <strong>5</strong></p>
+              <p>Bathrooms: <strong>4</strong></p>
+              <p>Area: <strong>345m²</strong></p>
+              <p>Floor: <strong>3</strong></p>
+              <p>Parking: <strong>4 spots</strong></p>
+            </div>
+            <hr>
+            <button class="card__button">Schedule a visit</button>
+          </div>
+          <div class="card">
+            <img src="../assets/images/villa3.png" alt="Luxury Villa" class="card__image" />
+            <span class="card__tag">Apartment</span>
+            <span class="card__price">$584.500</span>
+            <h3 class="card__address">18 Beachside Retreat, Morjim, Goa 403512</h3>
+            <div class="card__details">
+              <p>Bedrooms: <strong>4</strong></p>
+              <p>Bathrooms: <strong>3</strong></p>
+              <p>Area: <strong>145m²</strong></p>
+              <p>Floor: <strong>2</strong></p>
+              <p>Parking: <strong>1 spots</strong></p>
+            </div>
+            <hr>
+            <button class="card__button">Schedule a visit</button>
+          </div>
+          <div class="card">
+            <img src="../assets/images/villa1.png" alt="Luxury Villa" class="card__image" />
+            <span class="card__tag">Apartment</span>
+            <span class="card__price">$450.000</span>
+            <h3 class="card__address">25 Sunset Avenue, Candolim, Goa 403515</h3>
+            <div class="card__details">
+              <p>Bedrooms: <strong>4</strong></p>
+              <p>Bathrooms: <strong>4</strong></p>
+              <p>Area: <strong>145m²</strong></p>
+              <p>Floor: <strong>2</strong></p>
+              <p>Parking: <strong>1 spots</strong></p>
+            </div>
+            <hr>
+            <button class="card__button">Schedule a visit</button>
+          </div>
+          <div class="card">
+            <img src="../assets/images/villa2.png" alt="Luxury Villa" class="card__image" />
+            <span class="card__tag">Penthouse</span>
+            <span class="card__price">$925.600</span>
+            <h3 class="card__address">8 Tea Estate Path, Munnar, Kerala 685612</h3>
+            <div class="card__details">
+              <p>Bedrooms: <strong>4</strong></p>
+              <p>Bathrooms: <strong>4</strong></p>
+              <p>Area: <strong>185m²</strong></p>
+              <p>Floor: <strong>8th</strong></p>
+              <p>Parking: <strong>2 spots</strong></p>
+            </div>
+            <hr>
+            <button class="card__button">Schedule a visit</button>
+          </div>
+        </div>
+    </div>
+ </div>
+
+
+
+
+ <!-- 3 contact us -->
+ <div class="va-contact" id="contactus">
+  <!-- image -->
+  <div class="va-contactimg">
+      <div class="banner-main">
+          <img class="banner-main__image" src="../assets/images/contact-bg.jpg" alt="Luxury Villa" />
+      <div class="va-contactimg__content">
+          <div class="va-contactimg__contact">
+              <span>| <span class="highlight">CONTACT US</span></span>
+          </div>
+          <h1>Get In Touch With<br />Our Agents</h1>
+      </div>
+      </div>
+   </div>
+  <div class="content-wrapper">
+      <div class="va-contact__wrap">
+          <div class="va-contact__mapwrap">
+              <div class="va-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4734717716414!2d73.92619281479972!3d15.303501989358138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea8d42f24a81%3A0xddbb2075dd6c6d53!2sTaj%20Exotica%20Resort%20%26%20Spa%2C%20Goa!5e0!3m2!1sen!2sin!4v1690918743891!5m2!1sen!2sin" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+                  </iframe>
+                </div>
+                <div class="boxwrap">
+                    <div class="phone-card">
+                        <div class="icon">
+                         <img src="../assets/images/phone-icon.png" alt="">
+                        </div>
+                        <div class="details">
+                          <p class="number">010-020-0340</p>
+                          <p class="label">Phone Number</p>
+                        </div>
+                      </div>
+                      <div class="phone-card">
+                        <div class="icon">
+                         <img src="../assets/images/email-icon.png" alt="">
+                        </div>
+                        <div class="details">
+                          <p class="number">info@villa.co</p>
+                          <p class="label">Business Email</p>
+                        </div>
+                      </div>
+                   </div>
+          </div>
+               <!-- form -->
+               <div class="contact-form">
+                  <form>
+                    <div class="form-group">
+                      <label for="full-name">Full Name</label>
+                      <input type="text" id="full-name" placeholder="Your Name..." />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" placeholder="Your E-mail..." />
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" placeholder="Subject..." />
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                  </form>
+                </div>
+      </div>
+  </div>
+</div>
+ <!-- footer -->
+ <div class="va-footer">
+  <footer class="section footer">
+    <div class="footer__header">
+      <a href="/" class="footer__logo">
+        <span class="logo primary"></span>
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" target="_blank" class="btn social">
+            <span class="icon twitter"></span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" target="_blank" class="btn social">
+            <span class="icon youtube"></span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" target="_blank" class="btn social">
+            <span class="icon telegram"></span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" target="_blank" class="btn social">
+            <span class="icon whatsapp"></span>
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="btn icon">
+        <a href="#" class="icon drop-up"></a>
+      </button>
+    </div>
+    <ul class="footer__list">
+      <li class="footer__item active">
+        <a href="#" class="footer__link">Home</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">Property</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">Property Details</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">How It Works</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">About</a>
+      </li>
+    
+    </ul>
+    <div class="footer__copyright">
+      <p class="desc copyright">All rights reserved. 2024</p>
+    </div>
+  </footer>
+</div>
+    <!-- body content end -->
+
+    <!-- scripts -->
+    <script>
+      // Function to toggle the active class
+      function setActive(element) {
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach((link) => link.classList.remove("active")); // Remove active from all links
+        element.classList.add("active"); // Add active to the clicked link
+      }
+    </script>
+     <script>
+      // Add scroll event listener
+      window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.va-navbar');
+        if (window.scrollY > 50) { // Adjust the value as per your requirement
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    </script>
+    <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <!-- scripts -->
+  </body>
+</html>
